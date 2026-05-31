@@ -1,0 +1,27 @@
+services:
+  web:
+    build: .
+    image: kara3d:latest
+    env_file:
+      - .env
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:3000/api/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+
+  nginx:
+    image: nginx:1.27-alpine
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./nginx/conf.d:/etc/nginx/conf.d:ro
+      - /etc/ssl/kara3d:/etc/ssl/kara3d:ro
+    depends_on:
+      web:
+        condition: service_healthy
+    restart: unless-stopped

@@ -1,0 +1,154 @@
+{
+  "title": "Allgemeine Geschäftsbedingungen",
+  "updatedAt": "21. Mai 2026",
+  "sections": [
+    {
+      "id": "geltungsbereich",
+      "heading": "§ 1 Geltungsbereich",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Diese Allgemeinen Geschäftsbedingungen (nachfolgend &bdquo;AGB&ldquo;) gelten für alle Verträge zwischen der kara3d GmbH, Musterstraße 12, 80331 München (nachfolgend &bdquo;Auftragnehmer&ldquo;) und ihren Kunden (nachfolgend &bdquo;Auftraggeber&ldquo;) über die Erbringung von Dienstleistungen im Bereich des 3D-Drucks, der additiven Fertigung sowie damit zusammenhängender Beratungs- und Entwicklungsleistungen."
+        },
+        {
+          "type": "paragraph",
+          "html": "Abweichende, entgegenstehende oder ergänzende Allgemeine Geschäftsbedingungen des Auftraggebers werden nur dann Vertragsbestandteil, wenn und soweit der Auftragnehmer ihrer Geltung ausdrücklich schriftlich zugestimmt hat."
+        }
+      ]
+    },
+    {
+      "id": "vertragsschluss",
+      "heading": "§ 2 Vertragsschluss",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Angebote des Auftragnehmers sind freibleibend und unverbindlich. Ein Vertrag kommt erst durch die schriftliche Auftragsbestätigung des Auftragnehmers oder durch Beginn der Leistungserbringung zustande."
+        },
+        {
+          "type": "paragraph",
+          "html": "Der Auftraggeber ist an seine Bestellung für einen Zeitraum von 14 Tagen gebunden. Der Auftragnehmer ist berechtigt, Bestellungen ohne Angabe von Gründen abzulehnen."
+        }
+      ]
+    },
+    {
+      "id": "leistungen",
+      "heading": "§ 3 Leistungen",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Der Auftragnehmer erbringt Leistungen im Bereich der additiven Fertigung (3D-Druck) nach den vom Auftraggeber übermittelten technischen Spezifikationen. Der genaue Leistungsumfang ergibt sich aus dem jeweiligen Angebot bzw. der Auftragsbestätigung."
+        },
+        {
+          "type": "paragraph",
+          "html": "Der Auftragnehmer ist berechtigt, zur Erbringung der Leistungen qualifizierte Subunternehmer einzusetzen."
+        },
+        {
+          "type": "paragraph",
+          "html": "Änderungen des Leistungsumfangs bedürfen der schriftlichen Vereinbarung. Mehraufwände, die durch nachträgliche Änderungswünsche des Auftraggebers entstehen, werden gesondert berechnet."
+        }
+      ]
+    },
+    {
+      "id": "mitwirkungspflichten",
+      "heading": "§ 4 Mitwirkungspflichten des Auftraggebers",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Der Auftraggeber ist verpflichtet, die für die Leistungserbringung notwendigen Unterlagen, Daten und Informationen (insbesondere 3D-Dateien in den Formaten STL, STEP oder STP) rechtzeitig, vollständig und in geeigneter Form zur Verfügung zu stellen."
+        },
+        {
+          "type": "paragraph",
+          "html": "Der Auftraggeber gewährleistet, dass die übermittelten Dateien und Konstruktionsdaten keine Rechte Dritter verletzen. Er stellt den Auftragnehmer von sämtlichen Ansprüchen Dritter frei, die aus einer Verletzung dieser Pflicht resultieren."
+        },
+        {
+          "type": "paragraph",
+          "html": "Verzögerungen, die auf unzureichende Mitwirkung des Auftraggebers zurückzuführen sind, gehen nicht zu Lasten des Auftragnehmers. Entstehende Mehrkosten trägt der Auftraggeber."
+        }
+      ]
+    },
+    {
+      "id": "preise-zahlung",
+      "heading": "§ 5 Preise und Zahlungsbedingungen",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Es gelten die im Angebot genannten Preise. Alle Preise verstehen sich zuzüglich der gesetzlichen Umsatzsteuer."
+        },
+        {
+          "type": "paragraph",
+          "html": "Rechnungen sind innerhalb von 14 Tagen nach Rechnungsdatum ohne Abzug zu begleichen, sofern nichts anderes vereinbart wurde. Bei Zahlungsverzug ist der Auftragnehmer berechtigt, Verzugszinsen in Höhe von 9 Prozentpunkten über dem Basiszinssatz zu berechnen."
+        },
+        {
+          "type": "paragraph",
+          "html": "Bei Neuaufträgen und Aufträgen über 2.000 EUR netto ist der Auftragnehmer berechtigt, eine Anzahlung von bis zu 50 % des Auftragswertes zu verlangen."
+        }
+      ]
+    },
+    {
+      "id": "lieferung",
+      "heading": "§ 6 Lieferung und Lieferfristen",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Liefertermine und -fristen sind, soweit nicht ausdrücklich als verbindlich bezeichnet, unverbindlich. Der Auftragnehmer wird den Auftraggeber über absehbare Verzögerungen unverzüglich informieren."
+        },
+        {
+          "type": "paragraph",
+          "html": "Der Versand erfolgt auf Rechnung und Gefahr des Auftraggebers. Die Gefahr geht mit Übergabe der Ware an den Transporteur auf den Auftraggeber über."
+        }
+      ]
+    },
+    {
+      "id": "gewaehrleistung",
+      "heading": "§ 7 Gewährleistung und Haftung",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Der Auftragnehmer gewährleistet, dass die erbrachten Leistungen den vereinbarten Spezifikationen entsprechen. Mängel sind vom Auftraggeber unverzüglich, spätestens binnen 7 Tagen nach Erhalt der Ware schriftlich zu rügen."
+        },
+        {
+          "type": "paragraph",
+          "html": "Die Haftung des Auftragnehmers für einfache Fahrlässigkeit ist – außer bei der Verletzung wesentlicher Vertragspflichten, bei Schäden aus der Verletzung des Lebens, des Körpers oder der Gesundheit sowie bei arglistig verschwiegenen Mängeln – ausgeschlossen."
+        },
+        {
+          "type": "paragraph",
+          "html": "Der Auftragnehmer haftet nicht für Schäden, die aus der Verwendung fehlerhafter oder ungeeigneter Kundendaten resultieren."
+        }
+      ]
+    },
+    {
+      "id": "eigentumsvorbehalt",
+      "heading": "§ 8 Eigentumsvorbehalt",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Die gelieferten Waren bleiben bis zur vollständigen Bezahlung sämtlicher Forderungen des Auftragnehmers Eigentum des Auftragnehmers."
+        }
+      ]
+    },
+    {
+      "id": "vertraulichkeit",
+      "heading": "§ 9 Vertraulichkeit",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Beide Parteien verpflichten sich, alle ihnen im Rahmen der Zusammenarbeit bekannt gewordenen vertraulichen Informationen der jeweils anderen Partei vertraulich zu behandeln und nicht an Dritte weiterzugeben. Diese Verpflichtung gilt auch nach Beendigung des Vertragsverhältnisses."
+        }
+      ]
+    },
+    {
+      "id": "schlussbestimmungen",
+      "heading": "§ 10 Schlussbestimmungen",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Es gilt das Recht der Bundesrepublik Deutschland unter Ausschluss des UN-Kaufrechts. Erfüllungsort und ausschließlicher Gerichtsstand für alle Streitigkeiten aus diesem Vertrag ist München, sofern der Auftraggeber Kaufmann, juristische Person des öffentlichen Rechts oder öffentlich-rechtliches Sondervermögen ist."
+        },
+        {
+          "type": "paragraph",
+          "html": "Sollten einzelne Bestimmungen dieser AGB unwirksam sein oder werden, berührt dies die Wirksamkeit der übrigen Bestimmungen nicht. Die unwirksame Bestimmung ist durch eine wirksame zu ersetzen, die dem wirtschaftlichen Zweck der unwirksamen Bestimmung am nächsten kommt."
+        }
+      ]
+    }
+  ]
+}

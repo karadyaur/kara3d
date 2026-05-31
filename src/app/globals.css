@@ -1,0 +1,270 @@
+@import "tailwindcss";
+
+/* ─────────────────────────────────────────────
+   Responsive CSS variables (not Tailwind tokens)
+   Mobile values are defaults; desktop overrides at md (768px).
+   Named with _ prefix to avoid conflicts with @theme tokens.
+   ───────────────────────────────────────────── */
+:root {
+  /* Typography sizes — mobile */
+  --_size-h1: 2.5rem;       /* 40px */
+  --_size-h2: 2.25rem;      /* 36px */
+  --_size-h3: 2rem;         /* 32px */
+  --_size-h4: 1.5rem;       /* 24px */
+  --_size-h5: 1.25rem;      /* 20px */
+  --_size-h6: 1.125rem;     /* 18px */
+  --_size-text-large: 1.125rem;   /* 18px */
+  --_size-text-medium: 1rem;      /* 16px */
+
+  /* Spacing — mobile */
+  --_spacing-page: 1.25rem;         /* 20px */
+  --_spacing-section-lg: 4rem;      /* 64px */
+  --_spacing-section-md: 3rem;      /* 48px */
+  --_spacing-section-sm: 2rem;      /* 32px */
+}
+
+@media (min-width: 768px) {
+  :root {
+    /* Typography sizes — desktop */
+    --_size-h1: 4.5rem;       /* 72px */
+    --_size-h2: 3.25rem;      /* 52px */
+    --_size-h3: 2.75rem;      /* 44px */
+    --_size-h4: 2.25rem;      /* 36px */
+    --_size-h5: 1.75rem;      /* 28px */
+    --_size-h6: 1.375rem;     /* 22px */
+    --_size-text-large: 1.375rem;   /* 22px */
+    --_size-text-medium: 1.125rem;  /* 18px */
+
+    /* Spacing — desktop */
+    --_spacing-page: 4rem;          /* 64px */
+    --_spacing-section-lg: 7rem;    /* 112px */
+    --_spacing-section-md: 5rem;    /* 80px */
+    --_spacing-section-sm: 3rem;    /* 48px */
+  }
+}
+
+/* ─────────────────────────────────────────────
+   Tailwind theme tokens
+   @theme inline: utilities use var() references
+   so responsive CSS vars cascade through correctly.
+   ───────────────────────────────────────────── */
+@theme inline {
+
+  /* ── Fonts ── */
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-sora);
+
+  /* ── Primitive colors — Neutral ── */
+  --color-white: #ffffff;
+  --color-neutral-lightest: #f2f2f2;
+  --color-neutral-lighter: #d9d9d9;
+  --color-neutral-light: #b3b4b4;
+  --color-neutral: #808383;
+  --color-neutral-dark: #4d5251;
+  --color-neutral-darker: #1b201f;
+  --color-neutral-darkest: #020807;
+
+  /* ── Primitive colors — Malachite ── */
+  --color-malachite-lightest: #e6faec;
+  --color-malachite-lighter: #cef5d9;
+  --color-malachite-light: #53de7b;
+  --color-malachite: #0ad143;
+  --color-malachite-dark: #08a735;
+  --color-malachite-darker: #04531a;
+  --color-malachite-darkest: #033e14;
+
+  /* ── Primitive colors — Burnt Sienna ── */
+  --color-burnt-sienna-lightest: #fcf0ed;
+  --color-burnt-sienna-lighter: #fae2dc;
+  --color-burnt-sienna-light: #ee9a85;
+  --color-burnt-sienna: #e76f51;
+  --color-burnt-sienna-dark: #b85840;
+  --color-burnt-sienna-darker: #5c2c20;
+  --color-burnt-sienna-darkest: #452118;
+
+  /* ── Primitive colors — Jungle Green ── */
+  --color-jungle-green-lightest: #e9f5f3;
+  --color-jungle-green-lighter: #d4ebe8;
+  --color-jungle-green-light: #69bab0;
+  --color-jungle-green: #2a9d8f;
+  --color-jungle-green-dark: #217d72;
+  --color-jungle-green-darker: #103e39;
+  --color-jungle-green-darkest: #0c2f2a;
+
+  /* ── Opacity colors ── */
+  --color-white-5: rgb(255 255 255 / 5%);
+  --color-white-10: rgb(255 255 255 / 10%);
+  --color-white-15: rgb(255 255 255 / 15%);
+  --color-white-20: rgb(255 255 255 / 20%);
+  --color-white-30: rgb(255 255 255 / 30%);
+  --color-white-40: rgb(255 255 255 / 40%);
+  --color-white-50: rgb(255 255 255 / 50%);
+  --color-white-60: rgb(255 255 255 / 60%);
+  --color-neutral-darkest-5: rgb(2 8 7 / 5%);
+  --color-neutral-darkest-10: rgb(2 8 7 / 10%);
+  --color-neutral-darkest-15: rgb(2 8 7 / 15%);
+  --color-neutral-darkest-20: rgb(2 8 7 / 20%);
+  --color-neutral-darkest-30: rgb(2 8 7 / 30%);
+  --color-neutral-darkest-40: rgb(2 8 7 / 40%);
+  --color-neutral-darkest-50: rgb(2 8 7 / 50%);
+  --color-neutral-darkest-60: rgb(2 8 7 / 60%);
+
+  /* ── Heading type scale (responsive via CSS vars) ── */
+  --text-h1: var(--_size-h1);
+  --text-h1--line-height: 1.2;
+  --text-h1--letter-spacing: -0.01em;
+  --text-h1--font-weight: 600;
+
+  --text-h2: var(--_size-h2);
+  --text-h2--line-height: 1.2;
+  --text-h2--letter-spacing: -0.01em;
+  --text-h2--font-weight: 600;
+
+  --text-h3: var(--_size-h3);
+  --text-h3--line-height: 1.2;
+  --text-h3--letter-spacing: -0.01em;
+  --text-h3--font-weight: 600;
+
+  --text-h4: var(--_size-h4);
+  --text-h4--line-height: 1.3;
+  --text-h4--letter-spacing: -0.01em;
+  --text-h4--font-weight: 600;
+
+  --text-h5: var(--_size-h5);
+  --text-h5--line-height: 1.4;
+  --text-h5--letter-spacing: -0.01em;
+  --text-h5--font-weight: 600;
+
+  --text-h6: var(--_size-h6);
+  --text-h6--line-height: 1.4;
+  --text-h6--letter-spacing: -0.01em;
+  --text-h6--font-weight: 600;
+
+  --text-tagline: 1rem;
+  --text-tagline--line-height: 1.5;
+  --text-tagline--font-weight: 600;
+
+  /* ── Body text scale (responsive for large/medium) ── */
+  --text-large: var(--_size-text-large);
+  --text-large--line-height: 1.5;
+
+  --text-medium-body: var(--_size-text-medium);
+  --text-medium-body--line-height: 1.5;
+
+  --text-regular: 1rem;
+  --text-regular--line-height: 1.5;
+
+  --text-small: 0.875rem;
+  --text-small--line-height: 1.5;
+
+  --text-tiny: 0.75rem;
+  --text-tiny--line-height: 1.5;
+
+  /* ── Border radius ── */
+  --radius-3xl: 1.5rem;   /* 24px — Relume "Small" */
+  --radius-4xl: 2rem;     /* 32px — Relume "Medium" */
+  --radius-5xl: 2.5rem;   /* 40px — Relume "Large" */
+
+  /* ── Spacing (responsive via CSS vars) ── */
+  --spacing-page: var(--_spacing-page);
+  --spacing-section-lg: var(--_spacing-section-lg);
+  --spacing-section-md: var(--_spacing-section-md);
+  --spacing-section-sm: var(--_spacing-section-sm);
+
+  /* ── Container max-widths ── */
+  --width-container: 80rem;       /* 1280px */
+  --width-container-md: 64rem;    /* 1024px */
+  --width-container-sm: 48rem;    /* 768px */
+  --width-container-xs: 35rem;    /* 560px */
+  --width-container-2xs: 30rem;   /* 480px */
+  --width-container-3xs: 25rem;   /* 400px */
+  --width-container-4xs: 20rem;   /* 320px */
+}
+
+/* ─────────────────────────────────────────────
+   Container utility
+   Single source of truth for page-level width constraint.
+   Using @utility (Tailwind v4) instead of relying on
+   --width-* token namespace which doesn't reliably generate max-w-*.
+   ───────────────────────────────────────────── */
+@utility container-page {
+  width: 100%;
+  /* padding is INSIDE max-width, so outer box = 1280px + 2×padding.
+     This matches Figma: section has px-page, inner div has max-w-1280px (content). */
+  max-width: calc(80rem + 2 * var(--spacing-page));
+  margin-inline: auto;
+  padding-inline: var(--spacing-page);
+}
+
+/* ─────────────────────────────────────────────
+   Base element styles
+   ───────────────────────────────────────────── */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-white);
+    color: var(--color-neutral-darkest);
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 400;
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+
+  /* Instant touch response on iOS — no 300ms delay */
+  a, button, input, select, textarea, label, [role="button"] {
+    touch-action: manipulation;
+  }
+
+  h1 {
+    font-family: var(--font-display);
+    font-size: var(--_size-h1);
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+  }
+
+  h2 {
+    font-family: var(--font-display);
+    font-size: var(--_size-h2);
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+  }
+
+  h3 {
+    font-family: var(--font-display);
+    font-size: var(--_size-h3);
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+  }
+
+  h4 {
+    font-family: var(--font-display);
+    font-size: var(--_size-h4);
+    font-weight: 600;
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+  }
+
+  h5 {
+    font-family: var(--font-display);
+    font-size: var(--_size-h5);
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: -0.01em;
+  }
+
+  h6 {
+    font-family: var(--font-display);
+    font-size: var(--_size-h6);
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: -0.01em;
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "title": "Datenschutzerklärung",
+  "updatedAt": "21. Mai 2026",
+  "sections": [
+    {
+      "id": "ueberblick",
+      "heading": "Datenschutz auf einen Blick",
+      "blocks": [
+        {
+          "type": "heading",
+          "html": "Allgemeine Hinweise"
+        },
+        {
+          "type": "paragraph",
+          "html": "Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können. Ausführliche Informationen zum Thema Datenschutz entnehmen Sie unserer unter diesem Text aufgeführten Datenschutzerklärung."
+        },
+        {
+          "type": "heading",
+          "html": "Datenerfassung auf dieser Website"
+        },
+        {
+          "type": "paragraph",
+          "html": "<strong>Wer ist verantwortlich für die Datenerfassung auf dieser Website?</strong><br/>Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten können Sie dem Abschnitt &bdquo;Hinweis zur Verantwortlichen Stelle&ldquo; in dieser Datenschutzerklärung entnehmen."
+        },
+        {
+          "type": "paragraph",
+          "html": "<strong>Wie erfassen wir Ihre Daten?</strong><br/>Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen. Hierbei kann es sich z. B. um Daten handeln, die Sie in ein Kontaktformular eingeben. Andere Daten werden automatisch oder nach Ihrer Einwilligung beim Besuch der Website durch unsere IT-Systeme erfasst. Das sind vor allem technische Daten (z. B. Internetbrowser, Betriebssystem oder Uhrzeit des Seitenaufrufs)."
+        },
+        {
+          "type": "paragraph",
+          "html": "<strong>Wofür nutzen wir Ihre Daten?</strong><br/>Ein Teil der Daten wird erhoben, um eine fehlerfreie Bereitstellung der Website zu gewährleisten. Andere Daten können zur Analyse Ihres Nutzerverhaltens verwendet werden."
+        },
+        {
+          "type": "paragraph",
+          "html": "<strong>Welche Rechte haben Sie bezüglich Ihrer Daten?</strong><br/>Sie haben jederzeit das Recht, unentgeltlich Auskunft über Herkunft, Empfänger und Zweck Ihrer gespeicherten personenbezogenen Daten zu erhalten. Sie haben außerdem ein Recht, die Berichtigung oder Löschung dieser Daten zu verlangen. Wenn Sie eine Einwilligung zur Datenverarbeitung erteilt haben, können Sie diese Einwilligung jederzeit für die Zukunft widerrufen. Außerdem haben Sie das Recht, unter bestimmten Umständen die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen."
+        }
+      ]
+    },
+    {
+      "id": "verantwortliche",
+      "heading": "Verantwortliche Stelle",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:"
+        },
+        {
+          "type": "paragraph",
+          "html": "<strong>kara3d GmbH</strong><br/>Musterstraße 12<br/>80331 München<br/>Telefon: +49 89 123 456 789<br/>E-Mail: <a href=\"mailto:info@kara3d.de\">info@kara3d.de</a>"
+        },
+        {
+          "type": "paragraph",
+          "html": "Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z. B. Namen, E-Mail-Adressen o. Ä.) entscheidet."
+        }
+      ]
+    },
+    {
+      "id": "speicherdauer",
+      "heading": "Speicherdauer",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Soweit innerhalb dieser Datenschutzerklärung keine speziellere Speicherdauer genannt wurde, verbleiben Ihre personenbezogenen Daten bei uns, bis der Zweck für die Datenverarbeitung entfällt. Wenn Sie ein berechtigtes Löschersuchen geltend machen oder eine Einwilligung zur Datenverarbeitung widerrufen, werden Ihre Daten gelöscht, sofern wir keine anderen rechtlich zulässigen Gründe für die Speicherung Ihrer personenbezogenen Daten haben (z. B. steuer- oder handelsrechtliche Aufbewahrungsfristen); im letztgenannten Fall erfolgt die Löschung nach Fortfall dieser Gründe."
+        }
+      ]
+    },
+    {
+      "id": "rechtsgrundlagen",
+      "heading": "Rechtsgrundlagen der Verarbeitung",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Soweit wir Ihre Einwilligung zur Verarbeitung personenbezogener Daten eingeholt haben, ist Art. 6 Abs. 1 lit. a DSGVO die Rechtsgrundlage für die Datenverarbeitung. Zur Erfüllung eines Vertrags mit Ihnen stützen wir uns auf Art. 6 Abs. 1 lit. b DSGVO. Für die Erfüllung rechtlicher Verpflichtungen gilt Art. 6 Abs. 1 lit. c DSGVO. Soweit lebenswichtige Interessen betroffen sind, greift Art. 6 Abs. 1 lit. d DSGVO. Auf Basis unserer berechtigten Interessen verarbeiten wir Daten gemäß Art. 6 Abs. 1 lit. f DSGVO."
+        }
+      ]
+    },
+    {
+      "id": "betroffenenrechte",
+      "heading": "Ihre Rechte",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Sie haben im Rahmen der geltenden gesetzlichen Bestimmungen jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger und den Zweck der Datenverarbeitung und ggf. ein Recht auf Berichtigung oder Löschung dieser Daten."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Recht auf Auskunft (Art. 15 DSGVO)",
+            "Recht auf Berichtigung (Art. 16 DSGVO)",
+            "Recht auf Löschung (Art. 17 DSGVO)",
+            "Recht auf Einschränkung der Verarbeitung (Art. 18 DSGVO)",
+            "Recht auf Datenübertragbarkeit (Art. 20 DSGVO)",
+            "Recht auf Widerspruch gegen die Verarbeitung (Art. 21 DSGVO)",
+            "Recht auf Widerruf einer Einwilligung (Art. 7 Abs. 3 DSGVO)"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "html": "Außerdem haben Sie das Recht, sich bei einer Datenschutz-Aufsichtsbehörde über die Verarbeitung Ihrer personenbezogenen Daten durch uns zu beschweren. Zur Geltendmachung dieser Rechte wenden Sie sich bitte an: <a href=\"mailto:info@kara3d.de\">info@kara3d.de</a>"
+        }
+      ]
+    },
+    {
+      "id": "server-logfiles",
+      "heading": "Server-Log-Dateien",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Der Provider der Seiten erhebt und speichert automatisch Informationen in so genannten Server-Log-Dateien, die Ihr Browser automatisch an uns übermittelt. Dies sind:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Browsertyp und Browserversion",
+            "Verwendetes Betriebssystem",
+            "Referrer URL",
+            "Hostname des zugreifenden Rechners",
+            "Uhrzeit der Serveranfrage",
+            "IP-Adresse"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "html": "Eine Zusammenführung dieser Daten mit anderen Datenquellen wird nicht vorgenommen. Die Erfassung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Der Websitebetreiber hat ein berechtigtes Interesse an der technisch fehlerfreien Darstellung und der Optimierung seiner Website – hierzu müssen die Server-Log-Files erfasst werden."
+        }
+      ]
+    },
+    {
+      "id": "kontaktformular",
+      "heading": "Kontaktformular",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter."
+        },
+        {
+          "type": "paragraph",
+          "html": "Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO, sofern Ihre Anfrage mit der Erfüllung eines Vertrags zusammenhängt oder zur Durchführung vorvertraglicher Maßnahmen erforderlich ist. In allen übrigen Fällen beruht die Verarbeitung auf unserem berechtigten Interesse an der effektiven Bearbeitung der an uns gerichteten Anfragen (Art. 6 Abs. 1 lit. f DSGVO) oder auf Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO) sofern diese abgefragt wurde."
+        },
+        {
+          "type": "paragraph",
+          "html": "Die von Ihnen im Kontaktformular eingegebenen Daten verbleiben bei uns, bis Sie uns zur Löschung auffordern, Ihre Einwilligung zur Speicherung widerrufen oder der Zweck für die Datenspeicherung entfällt (z. B. nach abgeschlossener Bearbeitung Ihrer Anfrage). Zwingende gesetzliche Bestimmungen – insbesondere Aufbewahrungsfristen – bleiben unberührt."
+        }
+      ]
+    },
+    {
+      "id": "ssl",
+      "heading": "SSL- bzw. TLS-Verschlüsselung",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Diese Seite nutzt aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte, wie zum Beispiel Bestellungen oder Anfragen, die Sie an uns als Seitenbetreiber senden, eine SSL- bzw. TLS-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile des Browsers von &bdquo;http://&ldquo; auf &bdquo;https://&ldquo; wechselt und an dem Schloss-Symbol in Ihrer Browserzeile."
+        },
+        {
+          "type": "paragraph",
+          "html": "Wenn die SSL- bzw. TLS-Verschlüsselung aktiviert ist, können die Daten, die Sie an uns übermitteln, nicht von Dritten mitgelesen werden."
+        }
+      ]
+    }
+  ]
+}
