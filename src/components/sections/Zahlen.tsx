@@ -9,6 +9,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { fadeUp, stagger } from "@/lib/animations";
 import { Container } from "@/components/ui/Container";
+import { IMG_BLUR_DATA_URL } from "@/lib/constants";
 
 function ChevronRight() {
   return (
@@ -33,7 +34,7 @@ interface ZahlenProps {
 function StatContent({ value, description }: { value: string; description: string }) {
   return (
     <div className="flex flex-col gap-4 w-full">
-      <p className="font-display font-semibold text-h1 text-white leading-[1.2] tracking-[-0.01em] text-right">
+      <p className="font-display font-semibold text-h2 text-white leading-[1.2] tracking-[-0.01em] text-right">
         {value}
       </p>
       <div className="w-full border-t border-white-20" />
@@ -111,6 +112,8 @@ export function Zahlen({
                   alt={images.printerAlt}
                   fill
                   className="object-cover"
+                  placeholder="blur"
+                  blurDataURL={IMG_BLUR_DATA_URL}
                   sizes="(max-width: 768px) 100vw, 33vw"
                 />
               </div>
@@ -142,6 +145,8 @@ export function Zahlen({
                   alt={images.partsAlt}
                   fill
                   className="object-cover"
+                  placeholder="blur"
+                  blurDataURL={IMG_BLUR_DATA_URL}
                   sizes="(max-width: 768px) 100vw, 33vw"
                 />
               </div>

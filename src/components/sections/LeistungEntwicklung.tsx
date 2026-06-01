@@ -5,6 +5,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { fadeUp, stagger } from "@/lib/animations";
 import { Container } from "@/components/ui/Container";
+import { IMG_BLUR_DATA_URL } from "@/lib/constants";
 
 function ChevronRight() {
   return (
@@ -107,6 +108,8 @@ export function LeistungEntwicklung({
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 50vw"
+                placeholder="blur"
+                blurDataURL={IMG_BLUR_DATA_URL}
               />
             </div>
           </motion.div>

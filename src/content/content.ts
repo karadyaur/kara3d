@@ -2,28 +2,6 @@
  * Site Content — Kara 3D
  *
  * Single source of truth for all text and images across the site.
- * Organized by page → section → fields.
- *
- * Pages:
- *   - shared      → Navbar + Footer (used on every page)
- *   - home        → /
- *   - uberUns     → /uber-uns
- *   - leistungen  → /leistungen
- *   - serienfertigung → /serienfertigung
- *   - kontakt     → /kontakt
- *
- * SEO-Positionierung: 3D-Druck-Fertigung für Maschinenbau-Zubehör
- * (Vorrichtungen, Halterungen, Ersatzteile, Prototypen) aus Hamburg,
- * deutschlandweiter Versand. Kleinserien 1–500 Stück in ASA, ABS,
- * PETG und PLA.
- *
- * Primary Keywords:
- *   - 3D-Druck Vorrichtungen
- *   - 3D-Druck Halterungen Kleinserie
- *   - 3D-Druck Ersatzteile Maschinenbau
- *   - 3D-Druck Hamburg
- *   - ASA 3D-Druck Auftragsfertigung
- *   - Kleinserienfertigung Kunststoff Deutschland
  */
 
 // ============================================================================
@@ -31,7 +9,6 @@
 // ============================================================================
 
 export const shared = {
-  /** Top navigation bar — shown on every page */
   navbar: {
     links: [
       { label: "Über uns", href: "#uber-uns" },
@@ -42,17 +19,16 @@ export const shared = {
     ctaHref: "#kontakt",
   },
 
-  /** Footer — shown on every page */
   footer: {
     description:
-      "Kara 3D fertigt technische Kunststoffteile im 3D-Druck — Vorrichtungen, Halterungen und Ersatzteile für den Maschinenbau. Hergestellt in Hamburg, versendet deutschlandweit.",
+      "3D-Druck für Industrie-Teile. Aus Hamburg, versandt in ganz Deutschland.",
     navLinks: [
       { label: "Über uns", href: "#uber-uns" },
       { label: "Leistungen", href: "#leistungen" },
       { label: "Serienfertigung", href: "#serienfertigung" },
     ],
     newsletter: {
-      description: "Neue Materialien, Fertigungstipps und Projektbeispiele — etwa einmal im Quartal.",
+      description: "Tipps, Materialien, Beispiele — einmal pro Quartal.",
       placeholder: "E-Mail eingeben",
       buttonLabel: "Abonnieren",
       disclaimer: "Mit dem Abonnement akzeptieren Sie unsere",
@@ -70,67 +46,64 @@ export const shared = {
 };
 
 // ============================================================================
-// HOME — / (Hero, Vorteile, Leistungen, Anfang, Zahlen, ContactCta, Faq, Kontakt)
+// HOME
 // ============================================================================
 
 export const home = {
-  /** Hero — Top of homepage, full-bleed photo with title + buttons */
   hero: {
-    title: "3D-Druck für Maschinenbau-Zubehör aus Hamburg",
+    title: "3D-Druck aus Hamburg",
     description:
-      "Vorrichtungen, Halterungen und Ersatzteile in ASA, ABS, PETG und PLA. Kleinserien von 1 bis 500 Stück, gefertigt in Hamburg-Winterhude, versendet deutschlandweit per DHL.",
+      "Halterungen, Teile und Prototypen. 1 bis 500 Stück. ASA, ABS, PETG, PLA. Versand per DHL.",
     primaryLabel: "Angebot anfragen",
     primaryHref: "#kontakt",
     secondaryLabel: "Leistungen ansehen",
     secondaryHref: "#leistungen",
     backgroundImage:
-      "https://images.pexels.com/photos/20688553/pexels-photo-20688553.jpeg?auto=compress&cs=tinysrgb&w=1920",
+      "https://images.pexels.com/photos/31357903/pexels-photo-31357903.jpeg?auto=compress&cs=tinysrgb&w=1920",
   },
 
-  /** Vorteile — "Was wir bieten" — 3-card grid showcasing benefits */
   vorteile: {
     tagline: "Vorteile",
     title: "Warum Kara 3D",
     description:
-      "Direkter Kontakt, dokumentierte Druckparameter und ein klarer Fokus auf technische Kunststoffteile.",
+      "Klarer Fokus, feste Parameter, direkter Kontakt.",
     cards: [
       {
         tagline: "Fokus",
-        title: "Maschinenbau-Zubehör statt Allround",
+        title: "Nur Teile für die Industrie",
         description:
-          "Wir drucken keine Spielzeuge und keine Dekofiguren. Unser Fokus liegt auf Vorrichtungen, Halterungen, Gehäusen und Ersatzteilen für die Industrie.",
+          "Keine Deko, kein Spielzeug. Halterungen, Gehäuse und Ersatzteile — das ist alles.",
         href: "#leistungen",
         image:
-          "https://images.pexels.com/photos/30720501/pexels-photo-30720501.jpeg?auto=compress&cs=tinysrgb&w=800",
-        imageAlt: "3D-gedruckte Vorrichtung für den Maschinenbau",
+          "https://images.pexels.com/photos/17509941/pexels-photo-17509941.jpeg?auto=compress&cs=tinysrgb&w=800",
+        imageAlt: "3D-gedrucktes Teil wird vom Druckbett entfernt",
       },
       {
         tagline: "Kontakt",
-        title: "Direkter Ansprechpartner in Hamburg",
+        title: "Ein Ansprechpartner",
         description:
-          "Sie sprechen mit der Person, die Ihre Teile auch fertigt. Kein Callcenter, kein Outsourcing, keine anonyme Plattform.",
+          "Sie schreiben direkt mit dem, der Ihre Teile druckt. Kein Call-Center, keine Plattform.",
         href: "#uber-uns",
         image:
-          "https://images.pexels.com/photos/18296450/pexels-photo-18296450.jpeg?auto=compress&cs=tinysrgb&w=800",
-        imageAlt: "3D-Drucker in Betrieb in Hamburg",
+          "https://images.pexels.com/photos/19583534/pexels-photo-19583534.jpeg?auto=compress&cs=tinysrgb&w=800",
+        imageAlt: "Tablett mit 3D-gedruckten Teilen",
       },
       {
         tagline: "Prozess",
-        title: "Dokumentierte Druckparameter",
+        title: "Feste Parameter",
         description:
-          "Jede Serie wird mit denselben Einstellungen gefahren — Material, Schichtdicke, Düsentemperatur, Infill. Das macht Nachbestellungen reproduzierbar.",
+          "Jede Serie hat feste Werte: Material, Schicht, Temperatur. Nachbestellungen sind immer gleich.",
         href: "#serienfertigung",
         image:
-          "https://images.pexels.com/photos/20688553/pexels-photo-20688553.jpeg?auto=compress&cs=tinysrgb&w=800",
-        imageAlt: "Mit 3D-Druck gefertigte technische Bauteile",
+          "https://images.pexels.com/photos/19588197/pexels-photo-19588197.jpeg?auto=compress&cs=tinysrgb&w=800",
+        imageAlt: "3D-Drucker in der Werkstatt mit Filamentrolle",
       },
     ],
   },
 
-  /** Leistungen — Timeline of services with sticky-left layout */
   leistungen: {
     tagline: "Leistungen",
-    title: "Was wir für Sie fertigen",
+    title: "Was wir machen",
     primaryLabel: "Zur Serienfertigung",
     primaryHref: "#serienfertigung",
     secondaryLabel: "Alle Leistungen",
@@ -139,22 +112,21 @@ export const home = {
       {
         title: "Vorrichtungen & Halterungen",
         description:
-          "Montagehilfen, Prüfvorrichtungen, Sensorhalter und Kabelführungen — gefertigt nach Ihrer Zeichnung oder STEP-Datei.",
+          "Nach Ihrer Datei oder Zeichnung. Halterungen, Sensorhalter, Montageteile.",
       },
       {
-        title: "Ersatzteile aus dem 3D-Druck",
+        title: "Ersatzteile",
         description:
-          "Wenn das Originalteil nicht mehr lieferbar ist: wir drucken nach Muster, Zeichnung oder Reverse-Engineering-Vorlage.",
+          "Kein Original mehr? Wir drucken nach Muster oder Skizze.",
       },
       {
-        title: "Funktionsprototypen & Kleinserien",
+        title: "Prototypen & Kleinserien",
         description:
-          "Vom Einzelteil bis zur Serie von 500 Stück. Ideal für Tests, Erstmuster und wiederkehrende Bedarfe.",
+          "Vom Einzelteil bis 500 Stück. Für Tests, Muster und Serien.",
       },
     ],
   },
 
-  /** Anfang — 3-feature column with icons explaining the process */
   anfang: {
     tagline: "Ablauf",
     title: "So läuft Ihre Anfrage",
@@ -165,31 +137,30 @@ export const home = {
     features: [
       {
         icon: "plannerReview",
-        title: "1. Datei hochladen oder Skizze senden",
+        title: "1. Datei oder Skizze senden",
         description:
-          "STL, STEP oder PDF — bei einfachen Teilen reicht eine bemaßte Skizze. Wir prüfen Druckbarkeit, Material und Stückzahl.",
+          "STL, STEP oder PDF. Eine Skizze reicht oft. Wir prüfen Material und Machbarkeit.",
       },
       {
         icon: "equal",
-        title: "2. Angebot innerhalb von 24 Stunden",
+        title: "2. Angebot in 24 Stunden",
         description:
-          "Sie erhalten einen Festpreis pro Stück mit Material, Lieferzeit und Versandkosten. Verbindlich, ohne Kleingedrucktes.",
+          "Fester Preis pro Teil — mit Material und Lieferzeit. Kein Kleingedrucktes.",
       },
       {
         icon: "orderPlay",
-        title: "3. Fertigung und Versand",
+        title: "3. Druck und Versand",
         description:
-          "Nach Ihrer Freigabe starten wir die Produktion. Versand erfolgt per DHL deutschlandweit, in der Regel innerhalb von 5 bis 10 Werktagen.",
+          "Nach Freigabe starten wir. Versand per DHL, meist 5–10 Tage.",
       },
     ],
   },
 
-  /** Zahlen — Stats section with 3-column card grid and images */
   zahlen: {
     tagline: "Standards",
     title: "Womit wir arbeiten",
     description:
-      "Statt großer Versprechen — die konkreten Eckdaten unserer Fertigung. So wissen Sie vor der Anfrage, ob wir zu Ihrem Projekt passen.",
+      "Die Eckdaten unserer Anlage.",
     primaryLabel: "Materialien & Verfahren",
     primaryHref: "#leistungen",
     secondaryLabel: "Anfrage senden",
@@ -199,95 +170,93 @@ export const home = {
         title: "Bauraum",
         value: "256 × 256 × 260 mm",
         description:
-          "Maximale Teilegröße in einem Druck. Größere Bauteile werden segmentiert und verbunden.",
+          "Max. Größe pro Druck. Größere Teile werden geteilt.",
       },
       {
-        title: "Materialien im Standard",
+        title: "Materialien",
         value: "PLA · PETG · ASA · ABS",
         description:
-          "Vier geprüfte technische Kunststoffe. Weitere Materialien auf Anfrage.",
+          "Vier Kunststoffe im Standard. Weitere auf Anfrage.",
       },
       {
         title: "Lieferzeit",
         value: "5–10 Werktage",
         description:
-          "Standardlieferzeit ab Freigabe. Express auf Anfrage, abhängig von Auslastung.",
+          "Ab Freigabe. Express auf Anfrage.",
       },
     ],
     images: {
       printer:
-        "https://images.pexels.com/photos/31336881/pexels-photo-31336881.jpeg?auto=compress&cs=tinysrgb&w=800",
-      printerAlt: "3D-Drucker Düse beim Druck eines technischen Bauteils",
+        "https://images.pexels.com/photos/20877033/pexels-photo-20877033.jpeg?auto=compress&cs=tinysrgb&w=800",
+      printerAlt: "Makroaufnahme einer 3D-Druckerdüse",
       parts:
-        "https://images.pexels.com/photos/20688553/pexels-photo-20688553.jpeg?auto=compress&cs=tinysrgb&w=800",
-      partsAlt: "Im 3D-Druck gefertigte Bauteile aus ASA",
+        "https://images.pexels.com/photos/9242927/pexels-photo-9242927.jpeg?auto=compress&cs=tinysrgb&w=800",
+      partsAlt: "3D-gedrucktes Zahnrad auf Werkbank",
     },
   },
 
-  /** ContactCta — Call-to-action with image */
   contactCta: {
-    title: "Sie haben eine STEP-Datei oder eine Idee?",
+    title: "Idee oder Datei?",
     description:
-      "Schicken Sie uns Ihre Anfrage. Wir melden uns innerhalb von 24 Stunden mit einem konkreten Angebot.",
+      "Schreiben Sie uns. Angebot in 24 Stunden.",
     primaryLabel: "Anfrage senden",
     primaryHref: "#kontakt",
     secondaryLabel: "E-Mail schreiben",
     secondaryHref: "mailto:info@kara3d.de",
     image:
-      "https://images.pexels.com/photos/30720501/pexels-photo-30720501.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    imageAlt: "3D-Druckprozess bei Kara 3D in Hamburg",
+      "https://images.pexels.com/photos/26969628/pexels-photo-26969628.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    imageAlt: "3D-Drucker in einer Industriewerkstatt",
   },
 
-  /** Faq — Accordion of frequently asked questions */
   faq: {
-    title: "Häufige Fragen zum 3D-Druck-Service",
+    title: "Häufige Fragen",
     description:
-      "Antworten auf typische Fragen vor der ersten Anfrage. Wenn etwas fehlt — schreiben Sie uns einfach.",
+      "Nicht gefunden? Einfach schreiben.",
     items: [
       {
         question: "Wie schnell erhalte ich ein Angebot?",
         answer:
-          "Innerhalb von 24 Stunden nach Eingang Ihrer Anfrage. Laden Sie einfach Ihre STL- oder STEP-Datei hoch und geben Sie die gewünschte Stückzahl an. Bei einfachen Teilen reicht auch eine bemaßte Skizze als PDF.",
+          "Innerhalb von 24 Stunden. STL, STEP oder eine Skizze als PDF reicht.",
       },
       {
         question: "Welche Materialien drucken Sie?",
         answer:
-          "Im Standard PLA, PETG, ASA und ABS. PLA für Prototypen und Innenanwendungen, PETG für allgemeine Halterungen und Gehäuse, ASA für UV- und witterungsbeständige Außenteile, ABS für Anwendungen mit erhöhter Temperaturbelastung. Die Materialwahl besprechen wir gemeinsam, abhängig von mechanischer Belastung, Temperatur und Einsatzumgebung.",
+          "PLA, PETG, ASA und ABS. PLA für Prototypen, PETG für Halterungen, ASA für Außenteile, ABS für Hitze. Welches passt, klären wir gemeinsam.",
       },
       {
         question: "Ab welcher Stückzahl lohnt sich 3D-Druck?",
         answer:
-          "3D-Druck ist ab 1 Stück wirtschaftlich und gut geeignet für Serien von 1 bis 500 Teilen. Für Prototypen, Kleinserien, Ersatzteile und Bauteile mit komplexer Geometrie ist additive Fertigung fast immer schneller und günstiger als Spritzguss — weil keine Werkzeugkosten anfallen.",
+          "Ab 1 Stück. Bis 500 Teile günstig — keine Werkzeugkosten wie beim Spritzguss.",
       },
       {
         question: "Wie lange dauert eine Kleinserie?",
         answer:
-          "Standardlieferzeit ist 5 bis 10 Werktage ab Freigabe, abhängig von Stückzahl, Material und Auslastung. Bei wiederkehrenden Aufträgen reservieren wir Druckkapazität im Voraus, damit Ihre Serie pünktlich verfügbar ist. Express auf Anfrage.",
+          "5 bis 10 Tage ab Freigabe. Express auf Anfrage.",
       },
       {
         question: "Können Sie komplexe Geometrien fertigen?",
         answer:
-          "Ja — Hinterschnitte, Innenkanäle, dünne Wandstärken ab 0,8 mm und organische Formen sind im 3D-Druck umsetzbar. Wir prüfen Ihre Konstruktion vorab auf Druckbarkeit und melden uns, wenn Optimierungen sinnvoll sind, bevor Material verbraucht wird.",
+          "Ja. Dünne Wände, Kanäle, komplexe Formen — kein Problem. Wir prüfen vorher und melden uns, wenn etwas nicht passt.",
       },
       {
         question: "Was kostet eine Mindestbestellung?",
         answer:
-          "Der Mindestauftragswert liegt bei 15 €. Darunter rechnet sich der Einrichtungs- und Versandaufwand für beide Seiten nicht. Bei Kleinteilen empfehlen wir, mehrere Teile in einer Bestellung zusammenzufassen.",
+          "Mindest­bestellung 15 €. Kleine Teile gerne zusammenfassen.",
       },
       {
         question: "Liefern Sie deutschlandweit?",
         answer:
-          "Ja, Versand erfolgt deutschlandweit per DHL als versichertes Paket. Auf Wunsch auch als Express- oder Same-Day-Lieferung in Hamburg und Umgebung.",
+          "Ja, per DHL. In Hamburg auch Express oder Same-Day.",
       },
       {
         question: "Wie wird abgerechnet?",
         answer:
-          "Kara 3D ist als Kleinunternehmer nach § 19 UStG registriert. Sie erhalten eine ordnungsgemäße deutsche Rechnung ohne ausgewiesene Mehrwertsteuer. Zahlung per Überweisung, in der Regel mit 14 Tagen Zahlungsziel.",
+          "Kleinunternehmer nach § 19 UStG. Rechnung ohne MwSt. Zahlung per Überweisung, 14 Tage.",
       },
       {
         question: "Was unterscheidet Kara 3D von großen Online-Plattformen?",
         answer:
-          "Große Plattformen optimieren auf Einzelteile und Einmalaufträge. Kara 3D ist auf Maschinenbau-Zubehör in Kleinserien spezialisiert: feste Druckparameter pro Bauteil, ein konstanter Ansprechpartner, direkte Kommunikation per E-Mail oder Telefon. Sie bestellen nicht bei einem anonymen Portal, sondern bei einer Fertigung in Hamburg.",
+          "Große Plattformen: Einzel­teile, kein Kontakt. Kara 3D: Kleinserien, feste Parameter, ein Ansprechpartner, direkte Kommunikation.",
       },
     ],
     ctaTitle: "Etwas nicht beantwortet?",
@@ -296,12 +265,11 @@ export const home = {
     ctaHref: "#kontakt",
   },
 
-  /** Kontakt — Contact form section at bottom of homepage (also used on /kontakt) */
   kontakt: {
     tagline: "Kontakt",
     title: "Anfrage senden",
     description:
-      "Schicken Sie uns Ihre Datei oder beschreiben Sie Ihr Bauteil. Antwort innerhalb von 24 Stunden.",
+      "Datei oder Beschreibung reicht. Antwort in 24 Stunden.",
     privacyHref: "/datenschutz",
     formLabels: {
       name: "Name",
@@ -319,7 +287,7 @@ export const home = {
       ],
       message: "Nachricht",
       messagePlaceholder:
-        "Beschreiben Sie Ihr Bauteil: Einsatzzweck, gewünschtes Material, Maße, Besonderheiten.",
+        "Bauteil, Material, Maße, Besonderheiten.",
       upload: "Datei-Upload",
       uploadHint: "STL, STEP oder PDF · max. 20 MB",
       uploadButton: "Datei auswählen",
@@ -331,7 +299,7 @@ export const home = {
     contacts: {
       email: {
         title: "E-Mail",
-        description: "Direkter Weg zur Anfrage",
+        description: "Direkter Weg",
         value: "info@kara3d.de",
         href: "mailto:info@kara3d.de",
       },
@@ -343,110 +311,104 @@ export const home = {
       },
       location: {
         title: "Standort",
-        value: "Hamburg-Winterhude, Deutschland",
+        value: "Hamburg, Deutschland",
       },
     },
   },
 };
 
 // ============================================================================
-// ÜBER UNS — /uber-uns (UberUnsHero, Produktion, Grundlagen, ContactCta)
+// ÜBER UNS
 // ============================================================================
 
 export const uberUns = {
-  /** UberUnsHero — Hero with background image */
   hero: {
     tagline: "Über Kara 3D",
-    title: "Eine 3D-Druck-Werkstatt in Hamburg-Winterhude",
+    title: "3D-Druck-Werkstatt in Hamburg",
     description:
-      "Kara 3D ist eine kleine, spezialisierte Fertigung für technische Kunststoffteile. Geführt von Oleksandr Karadiaur, registriert als Gewerbe in Hamburg.",
+      "Kleine Fertigung für Industrie-Teile. Inhaber: Oleksandr Karadiaur.",
     primaryLabel: "Zu den Leistungen",
     primaryHref: "#leistungen",
     secondaryLabel: "Anfrage senden",
     secondaryHref: "#kontakt",
     backgroundImage:
-      "https://images.pexels.com/photos/18296450/pexels-photo-18296450.jpeg?auto=compress&cs=tinysrgb&w=1920",
+      "https://images.pexels.com/photos/33977799/pexels-photo-33977799.jpeg?auto=compress&cs=tinysrgb&w=1920",
   },
 
-  /** Produktion — Content + image side-by-side */
   produktion: {
     tagline: "Werkstatt",
     title: "Klein, fokussiert, deutsch dokumentiert",
     description:
-      "Wir sind keine Großfertigung und behaupten es auch nicht. Kara 3D ist eine 3D-Druck-Werkstatt mit klarem Fokus auf Maschinenbau-Zubehör: Vorrichtungen, Halterungen, Ersatzteile und Funktionsprototypen. Jede Anfrage geht direkt an den Inhaber. Jede Rechnung ist eine korrekte deutsche Geschäftsrechnung nach § 19 UStG. AGB, Widerrufsbelehrung und Datenschutzerklärung sind hinterlegt — Sie wissen, mit wem Sie es zu tun haben.",
+      "Keine Großfertigung. Wir machen Teile für die Industrie: Halterungen, Vorrichtungen, Ersatzteile. Jede Anfrage geht direkt an den Inhaber. Rechnung nach § 19 UStG.",
     partnerLogos: [],
     primaryLabel: "Leistungen ansehen",
     primaryHref: "#leistungen",
     secondaryLabel: "Anfrage senden",
     secondaryHref: "#kontakt",
     image:
-      "https://images.pexels.com/photos/30720501/pexels-photo-30720501.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    imageAlt: "3D-Druckwerkstatt von Kara 3D in Hamburg-Winterhude",
+      "https://images.pexels.com/photos/19871842/pexels-photo-19871842.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    imageAlt: "3D-Drucker fertigt kleine Kunststoffteile",
   },
 
-  /** Grundlagen — 3-card grid showing core values */
   grundlagen: {
     tagline: "Grundlagen",
     title: "Worauf Sie sich verlassen können",
     description:
-      "Drei Dinge, die wir in jedem Auftrag liefern — unabhängig von Stückzahl und Budget.",
+      "Drei Dinge bei jedem Auftrag.",
     cards: [
       {
         tagline: "Klarheit",
         title: "Festpreise statt Schätzungen",
         description:
-          "Sie erhalten pro Anfrage einen verbindlichen Stückpreis, keine ‚ab-Preise‘.",
+          "Fester Stückpreis pro Anfrage. Keine 'ab'-Preise.",
         href: "#kontakt",
         image:
-          "https://images.pexels.com/photos/20688553/pexels-photo-20688553.jpeg?auto=compress&cs=tinysrgb&w=800",
-        imageAlt: "Technisch präzise gefertigtes Bauteil",
+          "https://images.pexels.com/photos/31121900/pexels-photo-31121900.jpeg?auto=compress&cs=tinysrgb&w=800",
+        imageAlt: "3D-gedrucktes Teil auf dem Druckbett",
       },
       {
         tagline: "Erreichbarkeit",
-        title: "Antwort innerhalb von 24 Stunden",
+        title: "Antwort in 24 Stunden",
         description:
-          "Anfragen werden werktags am selben Tag bearbeitet. Spätestens am nächsten Werktag haben Sie ein Angebot.",
+          "Werktags am selben Tag. Sonst am nächsten Werktag.",
         href: "#kontakt",
         image:
-          "https://images.pexels.com/photos/31336881/pexels-photo-31336881.jpeg?auto=compress&cs=tinysrgb&w=800",
-        imageAlt: "3D-Drucker Düse in Betrieb",
+          "https://images.pexels.com/photos/22491107/pexels-photo-22491107.jpeg?auto=compress&cs=tinysrgb&w=800",
+        imageAlt: "Hochpräziser 3D-Drucker-Mechanismus",
       },
       {
         tagline: "Sorgfalt",
         title: "Vorprüfung jeder Datei",
         description:
-          "Wir prüfen Wandstärken, Überhänge und Toleranzen, bevor der Druck startet — und melden uns, wenn etwas nicht passt.",
+          "Wände, Überhänge, Toleranzen — wir prüfen vor dem Druck.",
         href: "#kontakt",
         image:
-          "https://images.pexels.com/photos/18296450/pexels-photo-18296450.jpeg?auto=compress&cs=tinysrgb&w=800",
-        imageAlt: "Fertigungsanlage im Betrieb",
+          "https://images.pexels.com/photos/20877039/pexels-photo-20877039.jpeg?auto=compress&cs=tinysrgb&w=800",
+        imageAlt: "Nahaufnahme des 3D-Druckkopfs",
         wide: true,
       },
     ],
   },
 
-  /** ContactCta — same as home but customizable per page */
   contactCta: {
-    title: "Lernen Sie unsere Fertigung kennen",
+    title: "Jetzt anfragen",
     description:
-      "Senden Sie uns Ihre erste Anfrage — wir antworten persönlich und konkret.",
+      "Wir antworten direkt und konkret.",
     primaryLabel: "Anfrage senden",
     primaryHref: "#kontakt",
     secondaryLabel: "Leistungen ansehen",
     secondaryHref: "#leistungen",
     image:
-      "https://images.pexels.com/photos/30720501/pexels-photo-30720501.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    imageAlt: "3D-Druckprozess bei Kara 3D",
+      "https://images.pexels.com/photos/23533982/pexels-photo-23533982.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    imageAlt: "3D-Drucker-Extruder in Aktion",
   },
 };
 
 // ============================================================================
-// LEISTUNGEN — /leistungen
-// (LeistungHero, Grundlagen, LeistungSteps, LeistungDetails, LeistungEntwicklung, LeistungCta)
+// LEISTUNGEN
 // ============================================================================
 
 export const leistungen = {
-  /** LeistungHero — Two-card article-style hero */
   hero: {
     tagline: "Leistungen",
     title: "3D-Druck für Maschinenbau-Zubehör und Kleinserien",
@@ -459,8 +421,8 @@ export const leistungen = {
         description:
           "Wir drucken nach Ihrer CAD-Datei oder bemaßten Zeichnung. Vorprüfung inklusive.",
         image:
-          "https://images.pexels.com/photos/20688553/pexels-photo-20688553.jpeg?auto=compress&cs=tinysrgb&w=800",
-        imageAlt: "Additive Fertigung eines technischen Bauteils",
+          "https://images.pexels.com/photos/32396956/pexels-photo-32396956.jpeg?auto=compress&cs=tinysrgb&w=800",
+        imageAlt: "3D-Drucker fertigt präzise Kunststoffteile",
       },
       {
         tag: "Reverse Engineering",
@@ -468,22 +430,20 @@ export const leistungen = {
         description:
           "Wenn nur das defekte Teil als Vorlage existiert: wir nehmen Maß und konstruieren neu.",
         image:
-          "https://images.pexels.com/photos/31336881/pexels-photo-31336881.jpeg?auto=compress&cs=tinysrgb&w=800",
-        imageAlt: "3D-Drucker beim Druck eines Ersatzteils",
+          "https://images.pexels.com/photos/31336922/pexels-photo-31336922.jpeg?auto=compress&cs=tinysrgb&w=800",
+        imageAlt: "3D-Drucker-Extruder mit orangem Filament",
       },
     ],
   },
 
-  /** Grundlagen — same shared Grundlagen component, same defaults as uberUns */
   grundlagen: {
     tagline: "Grundlagen",
     title: "Worauf Sie sich verlassen können",
     description:
-      "Drei Dinge, die wir in jedem Auftrag liefern — unabhängig von Stückzahl und Budget.",
+      "Drei Dinge bei jedem Auftrag.",
     cards: uberUns.grundlagen.cards,
   },
 
-  /** LeistungSteps — 3-step process with icons + image */
   steps: {
     steps: [
       {
@@ -506,20 +466,19 @@ export const leistungen = {
       },
     ],
     image:
-      "https://images.pexels.com/photos/30720501/pexels-photo-30720501.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    imageAlt: "Produktionsprozess im 3D-Druck",
+      "https://images.pexels.com/photos/19588197/pexels-photo-19588197.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    imageAlt: "3D-Drucker in der Werkstatt mit Werkzeug und Filament",
     primaryLabel: "Anfrage senden",
     primaryHref: "#kontakt",
     secondaryLabel: "Serienfertigung",
     secondaryHref: "#serienfertigung",
   },
 
-  /** LeistungDetails — Tabbed content (Verfahren / Materialien / Anwendungen) */
   details: {
     tagline: "Fertigung im Detail",
-    title: "Materialien, Verfahren und Einsatzgebiete",
+    title: "Materialien, Verfahren, Einsatz",
     description:
-      "Eine Übersicht über das, was wir konkret können — und das, was wir nicht versprechen.",
+      "Was wir können — und was nicht.",
     primaryLabel: "Anfrage senden",
     primaryHref: "#kontakt",
     secondaryLabel: "FAQ",
@@ -528,68 +487,66 @@ export const leistungen = {
       {
         label: "Verfahren",
         tagline: "Technologie",
-        title: "FFF-3D-Druck mit Dual-Nozzle-System",
+        title: "FFF-Druck, Bambu Lab X2D",
         description:
-          "Wir arbeiten mit FFF-Druck (Fused Filament Fabrication) auf einem Bambu Lab X2D mit Dual-Nozzle-Kopf. Bauraum 256 × 256 × 260 mm, beheizte Druckkammer bis 65 °C, beheizte Düse bis 300 °C. Damit fertigen wir auch anspruchsvolle Materialien wie ASA und ABS zuverlässig.",
+          "Dual-Nozzle, Bauraum 256 × 256 × 260 mm. Kammer bis 65 °C, Düse bis 300 °C. Geeignet für ASA und ABS.",
         primaryLabel: "Anfrage senden",
         primaryHref: "#kontakt",
         secondaryLabel: "Materialien ansehen",
         secondaryHref: "#leistungen",
         image:
-          "https://images.pexels.com/photos/20688553/pexels-photo-20688553.jpeg?auto=compress&cs=tinysrgb&w=1200",
-        imageAlt: "FFF-3D-Drucker mit Dual-Nozzle-Druckkopf",
+          "https://images.pexels.com/photos/4485456/pexels-photo-4485456.jpeg?auto=compress&cs=tinysrgb&w=1200",
+        imageAlt: "3D-Drucker-Düse in der Werkstatt",
       },
       {
         label: "Materialien",
         tagline: "Kunststoffe im Standard",
         title: "PLA, PETG, ASA und ABS",
         description:
-          "PLA für Prototypen, Modelle und Innenanwendungen ohne Wärmebelastung. PETG für allgemeine Halterungen, Gehäuse und mechanisch belastete Teile bis ca. 70 °C. ASA für witterungs- und UV-beständige Außenanwendungen. ABS für Bauteile mit erhöhter Temperaturbeständigkeit bis ca. 95 °C. Weitere Materialien auf Anfrage prüfbar.",
+          "PLA: Prototypen. PETG: Halterungen bis 70 °C. ASA: Außen, UV-fest. ABS: bis 95 °C. Weitere auf Anfrage.",
         primaryLabel: "Material besprechen",
         primaryHref: "#kontakt",
         secondaryLabel: "Anwendungen",
         secondaryHref: "#leistungen",
         image:
-          "https://images.pexels.com/photos/31336881/pexels-photo-31336881.jpeg?auto=compress&cs=tinysrgb&w=1200",
-        imageAlt: "Filamentrollen aus ASA, ABS, PETG und PLA",
+          "https://images.pexels.com/photos/31336838/pexels-photo-31336838.jpeg?auto=compress&cs=tinysrgb&w=1200",
+        imageAlt: "Filamentrollen für den 3D-Druck",
       },
       {
         label: "Anwendungen",
         tagline: "Einsatzgebiete",
         title: "Vom Werkstattzubehör zum Serienteil",
         description:
-          "Typische Anwendungen: Vorrichtungen und Montagehilfen, Sensorhalter und Kabelführungen, Schaltschrank-Inserts, Schutzkappen und Gehäuse, Ersatzteile für ältere Maschinen, Funktionsprototypen vor dem Spritzguss. Wir fertigen für Maschinenbau, Sondermaschinenbau und kleinere Industriebetriebe in ganz Deutschland.",
+          "Halterungen, Sensorhalter, Gehäuse, Ersatzteile, Prototypen. Für Industrie-Betriebe in ganz Deutschland.",
         primaryLabel: "Projekt besprechen",
         primaryHref: "#kontakt",
         secondaryLabel: "Serienfertigung",
         secondaryHref: "#serienfertigung",
         image:
-          "https://images.pexels.com/photos/30720501/pexels-photo-30720501.jpeg?auto=compress&cs=tinysrgb&w=1200",
-        imageAlt: "Anwendungsbeispiele aus dem Maschinenbau",
+          "https://images.pexels.com/photos/9242916/pexels-photo-9242916.jpeg?auto=compress&cs=tinysrgb&w=1200",
+        imageAlt: "3D-gedruckte Zahnräder auf der Werkbank",
       },
     ],
   },
 
-  /** LeistungEntwicklung — Development/optimization section */
   entwicklung: {
     tagline: "Entwicklung",
     title: "Konstruktion und Reverse Engineering",
     description:
-      "Sie haben kein CAD-Modell? Kein Problem.",
+      "Kein CAD-Modell? Kein Problem.",
     contentTagline: "CAD-Service",
     contentTitle: "Wir modellieren auf Basis Ihrer Vorlage",
     contentDescription:
-      "Wenn Sie nur ein Muster, eine Handskizze oder das defekte Originalteil haben, übernehmen wir die Konstruktion in Fusion 360 oder FreeCAD. Sie erhalten eine fertige STEP-Datei und können das Bauteil später auch bei anderen Fertigern bestellen — Sie behalten die Daten.",
+      "Muster, Skizze oder defektes Teil reicht. Wir bauen das Modell in Fusion 360. Sie bekommen die STEP-Datei — die Daten gehören Ihnen.",
     primaryLabel: "CAD-Anfrage senden",
     primaryHref: "#kontakt",
     secondaryLabel: "Mehr zur Fertigung",
     secondaryHref: "#serienfertigung",
     image:
-      "https://images.pexels.com/photos/20688553/pexels-photo-20688553.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    imageAlt: "CAD-Konstruktion eines Bauteils für den 3D-Druck",
+      "https://images.pexels.com/photos/20877032/pexels-photo-20877032.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    imageAlt: "Industrielle 3D-Drucker-Düse in dunkler Umgebung",
   },
 
-  /** LeistungCta — Bottom call-to-action banner */
   cta: {
     title: "Bereit für Ihr Bauteil?",
     description:
@@ -599,63 +556,58 @@ export const leistungen = {
     secondaryLabel: "FAQ ansehen",
     secondaryHref: "#faq",
     image:
-      "https://images.pexels.com/photos/20688553/pexels-photo-20688553.jpeg?auto=compress&cs=tinysrgb&w=1920",
-    imageAlt: "Bauteilfertigung im 3D-Druck",
+      "https://images.pexels.com/photos/33977820/pexels-photo-33977820.jpeg?auto=compress&cs=tinysrgb&w=1920",
+    imageAlt: "3D-Drucker in der Werkstatt mit Neonbeleuchtung",
   },
 };
 
 // ============================================================================
-// SERIENFERTIGUNG — /serienfertigung
-// (SerienfertigungHero, Zuverlässig, Dauerhaft, Ohnegrenzen, ZahlenFakten, LeistungCta)
+// SERIENFERTIGUNG
 // ============================================================================
 
 export const serienfertigung = {
-  /** SerienfertigungHero — Two-column hero with tagline+title left, description+buttons right */
   hero: {
     tagline: "Serienfertigung",
     title: "Kleinserien im 3D-Druck — 1 bis 500 Stück",
     description:
-      "Für wiederkehrende Bauteile mit dokumentierten Druckparametern. Ideal für Vorrichtungen, Halterungen und Ersatzteile, die regelmäßig nachbestellt werden.",
+      "Für Teile, die immer wieder bestellt werden. Mit festen Parametern.",
     primaryLabel: "Serien-Anfrage senden",
     primaryHref: "#kontakt",
     secondaryLabel: "Leistungen ansehen",
     secondaryHref: "#leistungen",
   },
 
-  /** Zuverlässig — Dark green section: content left, image right */
   zuverlässig: {
     tagline: "Reproduzierbarkeit",
     title: "Gleiche Teile auch beim zehnten Druck",
     description:
-      "Für jede Serie hinterlegen wir Material, Schichtdicke, Düsentemperatur, Infill und Druckkammertemperatur. Bei Nachbestellungen werden exakt dieselben Parameter geladen. Das heißt: gleiche Maße, gleiche Festigkeit, gleiches Aussehen — auch Monate später.",
+      "Material, Schicht, Temperatur — alles notiert. Jede Nachbestellung ist gleich. Gleiche Maße, gleiche Festigkeit — auch Monate später.",
     primaryLabel: "Serie anfragen",
     primaryHref: "#kontakt",
     secondaryLabel: "Häufige Fragen",
     secondaryHref: "#faq",
     image:
-      "https://images.pexels.com/photos/20688553/pexels-photo-20688553.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    imageAlt: "Reproduzierbare Serienteile aus dem 3D-Druck",
+      "https://images.pexels.com/photos/31137405/pexels-photo-31137405.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    imageAlt: "3D-Drucker extrudiert orange Kunststoff für eine Serie",
   },
 
-  /** Dauerhaft — White section with bullet list + image */
   dauerhaft: {
-    tagline: "Was eine Serie bei uns ausmacht",
-    title: "Klare Vereinbarung, klare Erwartung",
+    tagline: "Was inklusive ist",
+    title: "Klare Abmachung, klare Erwartung",
     description:
-      "Eine Serie bei Kara 3D bedeutet konkret:",
+      "Eine Serie bei Kara 3D:",
     bulletPoints: [
-      "Schriftlich festgehaltene Druckparameter pro Bauteil",
-      "Verbindlicher Stückpreis und Lieferzeit pro Tranche",
-      "Reservierte Druckkapazität für regelmäßige Nachbestellungen",
-      "Lagerung Ihrer STEP-Datei und Druckhistorie",
-      "Foto der fertigen Charge auf Wunsch vor dem Versand",
+      "Druckparameter pro Teil — schriftlich",
+      "Fester Preis und Lieferzeit pro Charge",
+      "Kapazität für Nachbestellungen reserviert",
+      "Ihre STEP-Datei bleibt gespeichert",
+      "Foto der Charge vor dem Versand",
     ],
     image:
-      "https://images.pexels.com/photos/31336881/pexels-photo-31336881.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    imageAlt: "Verpackung einer Serie technischer Kunststoffteile",
+      "https://images.pexels.com/photos/19376296/pexels-photo-19376296.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    imageAlt: "Filament-Spulen im Regal der 3D-Druck-Werkstatt",
   },
 
-  /** Ohnegrenzen — White section with image left, content right */
   ohnegrenzen: {
     tagline: "Skalierung",
     title: "Wo unsere Kapazität endet — und wo nicht",
@@ -666,26 +618,25 @@ export const serienfertigung = {
     secondaryLabel: "FAQ ansehen",
     secondaryHref: "#faq",
     image:
-      "https://images.pexels.com/photos/20688553/pexels-photo-20688553.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    imageAlt: "Kleinserienfertigung im 3D-Druck",
+      "https://images.pexels.com/photos/30275792/pexels-photo-30275792.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    imageAlt: "3D-Drucker in moderner Industrieumgebung",
   },
 
-  /** ZahlenFakten — Two-column stats section (title left, description + stats + buttons right) */
   zahlenFakten: {
     tagline: "Eckdaten",
     title: "Konkrete Rahmenbedingungen",
     description:
-      "Damit Sie vor der Anfrage einschätzen können, ob Kara 3D zu Ihrer Serie passt.",
+      "Passt Kara 3D zu Ihrer Serie?",
     stats: [
       {
         number: "1–500",
         description:
-          "Stückzahl pro Auftrag im Standardbereich, höhere Volumen auf Anfrage",
+          "Stück pro Auftrag. Mehr auf Anfrage.",
       },
       {
         number: "5–10",
         description:
-          "Werktage Standardlieferzeit ab Freigabe, deutschlandweit per DHL",
+          "Tage ab Freigabe, per DHL.",
       },
     ],
     primaryLabel: "Serie anfragen",
@@ -694,32 +645,30 @@ export const serienfertigung = {
     secondaryHref: "#leistungen",
   },
 
-  /** LeistungCta — Bottom call-to-action (same component as on /leistungen) */
   cta: {
-    title: "Ihre Serie beginnt mit einer STEP-Datei",
+    title: "Serie anfragen",
     description:
-      "Schicken Sie uns die Datei oder beschreiben Sie das Bauteil — wir melden uns innerhalb von 24 Stunden mit einem konkreten Angebot.",
+      "Datei schicken oder Bauteil beschreiben. Antwort in 24 Stunden.",
     primaryLabel: "Anfrage senden",
     primaryHref: "#kontakt",
     secondaryLabel: "E-Mail schreiben",
     secondaryHref: "mailto:info@kara3d.de",
     image:
-      "https://images.pexels.com/photos/20688553/pexels-photo-20688553.jpeg?auto=compress&cs=tinysrgb&w=1920",
-    imageAlt: "Kleinserienfertigung im 3D-Druck bei Kara 3D",
+      "https://images.pexels.com/photos/30482193/pexels-photo-30482193.jpeg?auto=compress&cs=tinysrgb&w=1920",
+    imageAlt: "3D-Drucker in lebhafter Werkstattumgebung",
   },
 };
 
 // ============================================================================
-// KONTAKT — /kontakt (Kontakt form section)
+// KONTAKT
 // ============================================================================
 
 export const kontakt = {
-  /** Main contact section — form + contact info (same as home.kontakt) */
   main: home.kontakt,
 };
 
 // ============================================================================
-// AGGREGATE EXPORT — all site content in one object
+// AGGREGATE EXPORT
 // ============================================================================
 
 export const siteContent = {

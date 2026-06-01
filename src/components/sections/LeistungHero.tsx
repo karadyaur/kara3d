@@ -4,6 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { fadeUp, stagger } from "@/lib/animations";
 import { Container } from "@/components/ui/Container";
+import { IMG_BLUR_DATA_URL } from "@/lib/constants";
 
 interface ArticleCard {
   tag: string;
@@ -59,6 +60,8 @@ export function LeistungHero({
                     alt={card.imageAlt ?? ""}
                     fill
                     className="object-cover"
+                    placeholder="blur"
+                    blurDataURL={IMG_BLUR_DATA_URL}
                     sizes="(max-width: 768px) 100vw, 50vw"
                   />
                 </div>
