@@ -1,7 +1,7 @@
 services:
   web:
     build: .
-    image: kara3d:latest
+    image: ghcr.io/karadyaur/kara3d:latest
     container_name: kara3d-web
     env_file:
       - .env
@@ -9,7 +9,7 @@ services:
     networks:
       - proxy
     healthcheck:
-      test: ["CMD", "wget", "-qO-", "http://localhost:3000/api/health"]
+      test: ["CMD", "wget", "-qO-", "http://127.0.0.1:3000/api/health"]
       interval: 30s
       timeout: 5s
       retries: 3
