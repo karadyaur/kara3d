@@ -7,7 +7,7 @@
 import { useState, useRef } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { fadeUp, stagger } from "@/lib/animations";
+import { fadeUp } from "@/lib/animations";
 import { Container } from "@/components/ui/Container";
 import { Select } from "@/components/ui/Select";
 
@@ -45,6 +45,10 @@ function LocationIcon() {
       <circle cx="16" cy="11" r="3" />
     </svg>
   );
+}
+
+function Req({ ariaLabel }: { ariaLabel: string }) {
+  return <span className="text-malachite-dark font-sans text-regular ml-0.5" aria-label={ariaLabel}>*</span>;
 }
 
 interface KontaktProps {
@@ -141,11 +145,6 @@ export function Kontakt({
   const inputClass =
     "w-full h-12 bg-neutral-darkest-5 rounded-xl px-4 font-sans font-normal text-regular text-neutral-darkest leading-[1.5] outline-none placeholder:text-neutral-darkest/40 focus:ring-2 focus:ring-malachite/40 transition";
 
-  // Required field label helper
-  const Req = () => (
-    <span className="text-malachite-dark font-sans text-regular ml-0.5" aria-label={formLabels.required}>*</span>
-  );
-
   return (
     <section className="bg-white py-section-lg">
       <Container className="flex flex-col gap-12">
@@ -174,7 +173,7 @@ export function Kontakt({
               <div className="flex flex-col gap-5 md:flex-row">
                 <div className="flex flex-col gap-1.5 flex-1">
                   <label className="font-sans font-medium text-small text-neutral-darkest leading-[1.5]">
-                    {formLabels.name}<Req />
+                    {formLabels.name}<Req ariaLabel={formLabels.required} />
                   </label>
                   <input
                     type="text"
@@ -186,7 +185,7 @@ export function Kontakt({
                 </div>
                 <div className="flex flex-col gap-1.5 flex-1">
                   <label className="font-sans font-medium text-small text-neutral-darkest leading-[1.5]">
-                    {formLabels.email}<Req />
+                    {formLabels.email}<Req ariaLabel={formLabels.required} />
                   </label>
                   <input
                     type="email"
@@ -201,7 +200,7 @@ export function Kontakt({
               {/* Stückzahl* — dropdown with ranges */}
               <div className="flex flex-col gap-1.5">
                 <label className="font-sans font-medium text-small text-neutral-darkest leading-[1.5]">
-                  {formLabels.stueckzahl}<Req />
+                  {formLabels.stueckzahl}<Req ariaLabel={formLabels.required} />
                 </label>
                 <Select
                   value={stueckzahl}
@@ -281,7 +280,7 @@ export function Kontakt({
                   <Link href={privacyHref} className="underline hover:opacity-70 transition-opacity">
                     {formLabels.privacyLink}
                   </Link>
-                  <Req />
+                  <Req ariaLabel={formLabels.required} />
                 </label>
               </div>
 

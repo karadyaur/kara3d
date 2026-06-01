@@ -7,7 +7,7 @@
 import Link from "next/link";
 import { ReactNode } from "react";
 import { motion } from "framer-motion";
-import { fadeUp, stagger, staggerFast } from "@/lib/animations";
+import { fadeUp, staggerFast } from "@/lib/animations";
 import { Container } from "@/components/ui/Container";
 
 function PlannerReviewIcon() {

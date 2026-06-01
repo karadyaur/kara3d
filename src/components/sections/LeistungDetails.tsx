@@ -4,7 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
-import { fadeUp, stagger } from "@/lib/animations";
+import { fadeUp } from "@/lib/animations";
 import { Container } from "@/components/ui/Container";
 import { IMG_BLUR_DATA_URL } from "@/lib/constants";
 
