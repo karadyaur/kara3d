@@ -7,7 +7,7 @@
 import { useState, useRef } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { fadeUp } from "@/lib/animations";
+import { fadeUp, stagger } from "@/lib/animations";
 import { Container } from "@/components/ui/Container";
 import { Select } from "@/components/ui/Select";
 
